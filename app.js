@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 var session = require('express-session');
 var md5 = require('blueimp-md5');
 
+var home = require('./routes/home');
 var routes = require('./routes/index');
 var configAlumno = require('./routes/configAlumno');
 var configAsignatura = require('./routes/configAsignatura');
@@ -38,7 +39,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-
+app.use('/home', home);
 app.use('/configAlumno', configAlumno);
 app.use('/configAsignatura', configAsignatura);
 app.use('/configAula', configAula);
