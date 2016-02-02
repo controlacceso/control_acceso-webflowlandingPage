@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1#titulo= title
+  p Welcome to #{title}
+  a#enlace(href='configAsignaturas/agregarAsignatura') agregarAsignatura
+  br
+  a#enlace(href='configAsignaturas/modificarAsignatura') modificarAsignatura
+  br
+  a#enlace(href='/config/configGlobal') Volver

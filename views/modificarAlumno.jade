@@ -1,0 +1,17 @@
+extends layout
+block extraHeader
+    link(rel='stylesheet', href='/stylesheets/styleModificarAlumno.css')
+
+block content
+  h1= title
+  h3 Modificar Alumno
+    .container
+      form#form.form-group
+        label(for='nombre') Nombre: 
+        input#nombre.form-control(type='text', name='nombre')
+        br
+        input.btn.btn-primary(type='submit', value='Buscar')
+        a#enlace.btn.btn-primary(href='/config/configPersonas') Volver
+    #resultado.container
+  script
+    include ../public/js/modificarAlumno.js

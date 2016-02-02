@@ -1,0 +1,68 @@
+@font-face {
+    font-family: tituloIndex;
+    src: url('../fonts/Sketch_Block.ttf');
+}
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-position: center center;
+	background-color: #464646;
+
+}
+#titulo{
+	text-align: center;
+	font-family: tituloIndex;
+	font-size: 52pt;
+	margin-top: 5%;
+	color:white;
+	word-wrap: break-word;
+     -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+     -ms-hyphens: auto;
+     -o-hyphens: auto;
+     hyphens: auto;
+}
+#formUpdate{
+	width: 60%;
+	margin: auto;
+	background-color: lightgrey;
+	border-radius: 25px;
+	padding: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-bottom: 50px;
+}
+#asignaturasTable tr{
+	float:left;
+	margin-right: 20px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+  	padding-top: 100px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-position: center center;
+	background-color: #464646;
+  }
+  #titulo{
+  	color:black;
+  	font-size: 25pt;
+  }
+  #loginFormContainer{
+  	width: 80%;
+  	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+  }
+}

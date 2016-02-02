@@ -1,0 +1,48 @@
+nav.navbar.navbar-inverse(role='navigation')
+      .container
+        // Brand and toggle get grouped for better mobile display
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='/')
+            img(alt='Home', src='images/sshot-1.png', style='width:40px;height:45px;border-radius:10px;')
+        // Collect the nav links, forms, and other content for toggling
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li
+              a#linkConfig(href='/config') Configuración ControlFid
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='/configDispositivo') Dispositivos
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                | Global 
+                b.caret
+              ul.dropdown-menu
+                li
+                  a(href='#') Action
+                li
+                  a(href='#') Another action
+                li
+                  a(href='#') Something else here
+                li.divider
+                li
+                  a(href='#') Separated link
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                | Personas 
+                b.caret
+              ul.dropdown-menu
+                li
+                  a(href='#') Action
+                li
+                  a(href='#') Another action
+                li
+                  a(href='#') Something else here
+                li.divider
+                li
+                  a(href='#') Separated link
+        // /.navbar-collapse

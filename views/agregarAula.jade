@@ -1,0 +1,23 @@
+extends layout
+
+block content
+  h1#titulo= title
+  form#agregarAulaForm.form-group()
+    label(for='numero') numero
+    input#numero.form-control(type='number', name='numero')
+    br
+    #mensaje.alert.alert-error.fade.in(style='display: none')
+      a.close(href='#', data-dismiss='alert') ×
+      strong Comprueba!
+      span  Numero ya existente
+    label(for='piso') piso
+    input#piso.form-control(type='number', name='piso')
+    br
+    label(for='capacidad') capacidad
+    input#capacidad.form-control(type='number', name='capacidad')
+    br
+    button#send.btn.btn-primary(name='send') Enviar
+    a#enlace.btn.btn-primary(href='/config/configGlobal/configAulas') Volver
+  script
+    include ../public/js/agregarAula.js
+    

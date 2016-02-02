@@ -1,0 +1,16 @@
+extends layout
+block extraHeader
+
+block content
+  h1= title
+  h3 Modificar Aula
+    .container
+      form#form.form-group
+        label(for='numero') Numero: 
+        input#numero.form-control(type='text', name='numero')
+        br
+        input.btn.btn-primary(type='submit', value='Buscar')
+        a#enlace.btn.btn-primary(href='/config/configGlobal/configAulas') Volver
+    #resultado.container
+  script
+    include ../public/js/modificarAula.js

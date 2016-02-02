@@ -1,0 +1,15 @@
+
+extends layout
+
+block content
+  h1#titulo= title
+  p Welcome to #{title}
+  a#enlace(href='configPersonas/agregarAlumno') agregarAlumno
+  br
+  a#enlace(href='configPersonas/agregarProfesor') agregarProfesor 
+  br
+  a#enlace(href='configPersonas/modificarAlumno') modificarAlumno
+  br
+  a#enlace(href='configPersonas/modificarProfesor') modificarProfesor
+  br
+  a#enlace(href='/config') Volver

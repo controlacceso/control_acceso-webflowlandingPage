@@ -1,0 +1,65 @@
+body{
+	padding: 20px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-image: url('../images/gradient10.jpg');
+	background-position: center center;
+	background-color: #464646;
+}
+
+#enlace {
+  color: white;
+  text-decoration: none;
+}
+#enlace:hover{
+	text-decoration: none;
+	font-weight: bold;
+}
+#titulo{
+	color:white;
+	font-weight: bold;
+}
+#footer{
+  width: 100%;
+  height: 80px;
+  bottom: 0px;
+  left: 0px;
+  background-color: #2E2E2E;
+  color:white;
+  position: absolute;
+  display: block;
+}
+#footer p{
+  margin-left: 10%;
+  margin-top: 2%;
+}
+#tituloLogin{
+  text-align: center;
+  font-weight: bold;
+}
+
+/*****Menu*****/
+.navbar .brand {
+max-height: 50px;
+overflow: visible;
+padding-top: 0;
+padding-bottom: 0;
+}
+.navbar a.navbar-brand {padding: 0px 15px 0px;}
+.navbar{
+  height: 80px;
+}
+.container{
+  margin-top: 15px;
+}
+#linkConfig{
+  font-size: 18pt;
+}
+#bs-example-navbar-collapse-1{
+  background-color: #333;
+  border-radius: 10px;
+}

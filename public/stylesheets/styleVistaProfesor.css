@@ -1,0 +1,165 @@
+h1{
+	float:left;
+}
+body{
+	padding-top: 0px;
+}
+.filaAlumnos{
+	float:left;
+	margin:20px;
+}
+td{
+	
+}
+#fotoProfesor{
+	margin-bottom: 10px;
+	margin-left: 50px;
+	margin-top: 20px;
+	box-shadow: 5px 5px 10px black;
+}
+#nombreProfesor{
+	margin-left: 20px;
+	margin-top: 30px;
+}
+.page-header{
+	background-color: lightgrey;
+	box-shadow: 5px 5px 10px black;
+}
+.celdaAlumno{
+	width: 250px;
+	height: 220px;
+}
+#botonHorarioProfesor{
+	margin-right: 20px;
+	background-color: lightgrey;
+	color:black;
+	width: 100px;
+	height: 35px;
+}
+#botonHorarioProfesor:hover{
+	background-color: grey;
+	font-weight: bold;
+}
+#tablaHorario td, #tablaHorario th{
+	width: 20%;
+	text-align: center;
+}
+#tablaHorario th{
+	background-color: #565665;
+	color:white;
+	text-align: center;
+}
+#tablaHorario td{
+	padding: 5px;
+}
+#tablaHorario tr{
+	margin: 0px;
+}
+.ui-dialog .ui-dialog-titlebar {
+   background-image: url('../images/gradient10.jpg');
+   border: 1px solid black;
+   color:black;
+}
+.presencia0{
+	background-color: rgba(255, 0, 0, 0.6);
+}
+.presencia1{
+	background-color: rgba(0, 255, 100, 0.6);
+}
+.presencia1, .presencia0{
+	padding: 10px;
+	width: 150px;
+	text-align: center;
+	box-shadow: 5px 5px 10px black;
+}
+td img{
+	margin-bottom: 10px;
+	box-shadow: 5px 5px 10px black;
+}
+td:hover{
+	cursor:pointer;
+}
+#exit{
+	background-color: lightgrey;
+	float:right;
+	color:black;
+	width: 100px;
+	height: 35px;
+}
+#exit:hover{
+	text-decoration: none;
+	background-color: grey;
+	font-weight: bold;
+}
+#botonHorarioProfesor, #exit{
+	margin-bottom: 20px;
+}
+#footer{
+	bottom: auto;
+}
+#footer p{
+	float: left;
+}
+#botonBuscador{
+	float:right;
+	margin-right: 5%;
+	margin-top: 2%;
+}
+#accordion div{
+	height: 150px;
+}
+#buscadorSubmit{
+	margin-top: 10px;
+	width: 100%;
+}
+.error{
+	color: red;
+}
+#buscador td, #buscador th{
+	width: 30%;
+	text-align: center;
+}
+#buscador th{
+	background-color: black;
+	color:white;
+}
+.ui-state-default .ui-icon {
+    background-image: url("images/ui-icons_222222_256x240.png");
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+    border: 1px solid #ccc;
+    background: #565665;
+    font-weight: bold;
+    color: #eb8f00;
+}
+.ui-state-active, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover {
+    border: 1px solid #ccc;
+    background: #565665;
+    font-weight: bold;
+    color: white;
+}
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+    color: black;
+    text-decoration: none;
+}
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited{
+	color:white;
+}
+.ui-state-hover a, .ui-state-hover a:hover, .ui-state-hover a:link, .ui-state-hover a:visited, .ui-state-focus a, .ui-state-focus a:hover, .ui-state-focus a:link, .ui-state-focus a:visited{
+	color:white;
+}
+#tablaPersona{
+	margin-bottom: 20px;
+}
+#volverABuscar{
+	width: 100%;
+}
+@media only screen and (max-width: 450px) and (orientation:portrait){
+	.presencia1, .presencia0{
+			width: 300px;
+	}
+}
+.ui-dialog {
+	position:fixed;
+	left: auto;
+}

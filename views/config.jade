@@ -1,0 +1,14 @@
+extends layout
+block extraHeader
+  link(rel='stylesheet', href='/stylesheets/styleConfig.css')
+
+block content
+  include ./includes/menuConfig.jade
+  h1#titulo= title
+  table#tablaAulas
+    for au in aula
+      tr.filaAulas
+        div.divAula(id='#{au.id_aula}') #{au.numero}
+  script
+   include ../public/js/config.js
+

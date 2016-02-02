@@ -1,0 +1,33 @@
+extends layout
+
+block content
+  h1#titulo= title
+  form#agregarAsignaturasForm.form-group()
+    label(for='nombre') nombre
+    input#nombre.form-control(type='text', name='nombre')
+    br
+    label(for='clave') clave
+    input#clave.form-control(type='text', name='clave')
+    #mensaje.alert.alert-error.fade.in(style='display: none')
+      a.close(href='#', data-dismiss='alert') ×
+      strong Comprueba!
+      span  Clave ya existente
+    label(for='obligatoria') obligatoria
+    br
+    input(type='radio', name='obligatoria', value='1')
+    |  SI
+    input(type='radio', name='obligatoria', value='0')
+    |  NO
+    br
+    br
+    label(for='tipo') tipo
+    select(name='tipo')
+      option(value='default') Elige el tipo
+      option(value='Bachiller') Bachiller
+      option(value='FP') FP
+    br
+    br
+    button#send.btn.btn-primary(name='send') Enviar
+    a#enlace.btn.btn-primary(href='/config/configGlobal/configAsignaturas') Volver
+  script
+    include ../public/js/agregarAsignatura.js
