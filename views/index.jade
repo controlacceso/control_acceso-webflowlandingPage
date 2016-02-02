@@ -1,0 +1,24 @@
+extends layout
+block extraHeader
+    link(rel='stylesheet', href='/stylesheets/styleIndex.css')
+block content
+  h1#titulo= title
+  #loginFormContainer.container
+    h3#tituloLogin Login
+    form#loginForm.form-group(action='/login', method='post')
+     label(for='user') Usuario:
+     input#user.form-control(type='text', name='user')
+     br
+     label(for='pass') Password:
+     input#pass.form-control(type='password', name='pass')
+     br
+     input#administrador.form-control(type='checkbox', name='administrador', value='1')
+     label#labelAdministrador(for='administrador') Entrar como administrador
+     br
+     if info
+      .alert.alert-danger
+       | #{info}
+     button#send.btn.btn-primary(name='send') Enviar
+  script
+    include ../public/js/index.js
+  include ./includes/indexFooter.jade

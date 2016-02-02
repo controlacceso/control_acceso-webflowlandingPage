@@ -1,0 +1,16 @@
+extends layout
+block extraHeader
+
+block content
+  h1= title
+  h3 Modificar Grupo
+    .container
+      form#form.form-group
+        label(for='nombre') Nombre: 
+        input#nombre.form-control(type='text', name='nombre')
+        br
+        input.btn.btn-primary(type='submit', value='Buscar')
+        a#enlace.btn.btn-primary(href='/config/configGlobal/configGrupos') Volver
+    #resultado.container
+  script
+    include ../public/js/modificarGrupo.js

@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  h1#titulo= title
+  form#agregarGrupoForm.form-group()
+    label(for='nombre') nombre
+    input#nombre.form-control(type='nombre', name='nombre')
+    br
+    #mensaje.alert.alert-error.fade.in(style='display: none')
+      a.close(href='#', data-dismiss='alert') ×
+      strong Comprueba!
+      span  Grupo ya existente
+    br
+    label(for='tipo') tipo
+    select(name='tipo')
+      option(value='default') Elige el tipo
+      option(value='Bachiller') Bachiller
+      option(value='FP') FP
+    br
+    button#send.btn.btn-primary(name='send') Enviar
+    a#enlace.btn.btn-primary(href='/config/configGlobal/configGrupos') Volver
+  script
+    include ../public/js/agregarGrupo.js
+    

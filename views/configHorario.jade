@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1#titulo= title
+  p Welcome to #{title}
+  p Horario
+  a#enlace(href='/configHorarioGrupo/config/configGlobal/configHorario/agregarHorarioGrupo') agregarHorarioGrupo
+  br
+  a#enlace(href='/configHorarioProfesor/config/configGlobal/configHorario/agregarHorarioProfesor') agregarHorarioProfesor 
+  br
+  a#enlace(href='configHorario/modificarHorarioGrupo') modificarHorarioGrupo
+  br
+  a#enlace(href='configHorario/modificarHorarioProfesor') modificarHorarioProfesor
+  br
+  a#enlace(href='/config/configGlobal') Volver

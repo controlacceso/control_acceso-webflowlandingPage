@@ -1,0 +1,10 @@
+.divAula {
+    border: 2px solid #000000;
+    line-height:30px;
+    background-color:#eeeeee;
+    height:100px;
+    width:100px;
+    float:left;
+    margin-bottom:25px;
+    margin-right: 25px;
+}

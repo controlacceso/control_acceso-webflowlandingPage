@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1#titulo= title
+  p Welcome to #{title}
+  a#enlace(href='#') AgregarDispositivo
+  br
+  a#enlace(href='#') ModificarDispositivo
+  br
+  a#enlace(href='#') BorrarDispositivo
+  br
+  a#enlace(href='/config') Volver

@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1#titulo= title
+  p Welcome to #{title}
+  a#enlace(href='configGrupos/agregarGrupo') AgregarGrupo
+  br
+  a#enlace(href='configGrupos/modificarGrupo') ModificarGrupo
+  br
+  a#enlace(href='/config/configGlobal') Volver
